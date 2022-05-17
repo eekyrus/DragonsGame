@@ -28,6 +28,7 @@ bootRun {
     if (project.hasProperty('args')) {
         args project.args.split(' ')
     }
+    systemProperty("spring.profiles.active", System.getProperty("spring.profiles.active"))
 }
 
 test {
