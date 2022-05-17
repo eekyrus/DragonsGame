@@ -10,10 +10,10 @@ import org.springframework.web.util.UriBuilderFactory;
 @Configuration
 public class RestTemplateConfig {
 
-    @Bean("domRestTemplate")
-    public RestTemplate domRestTemplate() {
-        UriBuilderFactory defaultUriTemplateHandler = new DefaultUriBuilderFactory("https://dragonsofmugloar.com/api/v2/");
-        return new RestTemplateBuilder().uriTemplateHandler(defaultUriTemplateHandler).build();
-    }
+  @Bean("domRestTemplate")
+  public RestTemplate domRestTemplate() {
+    UriBuilderFactory defaultUriTemplateHandler = new DefaultUriBuilderFactory("https://dragonsofmugloar.com/api/v2/");
+    return new RestTemplateBuilder().uriTemplateHandler(defaultUriTemplateHandler).build();
+  }
 
 }

@@ -5,6 +5,6 @@ import lombok.Data;
 @Data
 public class GameDto {
 
-    private String gameId;
+  private String gameId;
 
 }

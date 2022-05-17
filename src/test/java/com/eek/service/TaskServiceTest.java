@@ -3,17 +3,12 @@ package com.eek.service;
 import com.eek.dao.ShopDao;
 import com.eek.dao.TaskDao;
 import com.eek.dto.TaskDto;
-import com.eek.model.ShopItem;
 import com.eek.model.TaskDifficulty;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
-import org.mockito.Mockito;
-import org.mockito.junit.MockitoJUnit;
-import org.mockito.junit.MockitoRule;
 import org.mockito.junit.jupiter.MockitoExtension;
 
 import java.util.List;
@@ -63,7 +58,7 @@ class TaskServiceTest {
   }
 
   private TaskDto[] mockTasks() {
-    return new TaskDto[] {
+    return new TaskDto[]{
       new TaskDto("3", "Task Three", 30, 5, TaskDifficulty.RATHER_DETRIMENTAL.getDescription()),
       new TaskDto("1", "Task One", 10, 5, TaskDifficulty.PIECE_OF_CAKE.getDescription()),
       new TaskDto("2", "Task Two", 20, 4, TaskDifficulty.PIECE_OF_CAKE.getDescription()),
@@ -74,7 +69,7 @@ class TaskServiceTest {
   }
 
   private TaskDto[] createExpectedSortedTasks() {
-    return new TaskDto[] {
+    return new TaskDto[]{
       new TaskDto("6", "Task Six", 60, 2, TaskDifficulty.SURE_THING.getDescription()),
       new TaskDto("5", "Task Five", 50, 2, TaskDifficulty.SURE_THING.getDescription()),
       new TaskDto("4", "Task Four", 40, 5, TaskDifficulty.SURE_THING.getDescription()),

@@ -9,10 +9,10 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class TaskDto {
 
-    private String adId;
-    private String message;
-    private long reward;
-    private Integer expiresIn;
-    private String probability;
+  private String adId;
+  private String message;
+  private long reward;
+  private Integer expiresIn;
+  private String probability;
 
 }
